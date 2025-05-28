@@ -1,0 +1,45 @@
+/* Vertical Nav Bar */
+.vertical-nav {
+  width: 200px;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.vertical-nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+}
+
+.vertical-nav a.active {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+
+/* Horizontal Nav Bar */
+.horizontal-nav {
+  display: flex;
+  border: 1px solid black;
+  width: max-content;
+}
+
+.horizontal-nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: blue;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.horizontal-nav a:first-child {
+  border-left: none;
+}
+
+.horizontal-nav a.active {
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+}
