@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+.task-header {
+  background-color: #2d501d;
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+  width: 150px;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.centered {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+label {
+  width: 80px;
+  margin-top: 6px;
+}
+
+input[type="text"],
+textarea {
+  width: 250px;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+.error {
+  margin-left: 10px;
+  color: red;
+  font-size: 14px;
+  visibility: hidden;
+}
+
+input.error-border,
+textarea.error-border {
+  border: 2px solid red;
+}
+
+.submit-btn {
+  margin-left: 85px;
+  padding: 5px 15px;
+}

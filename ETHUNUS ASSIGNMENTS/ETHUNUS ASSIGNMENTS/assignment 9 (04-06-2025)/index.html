@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="task-header">Task</div>
+
+  <h2 class="centered">Registration Form</h2>
+
+  <form id="regForm" novalidate>
+    <div class="row">
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+      <span class="error" id="nameError">This field is required</span>
+    </div>
+
+    <div class="row">
+      <label for="email">Email:</label>
+      <input type="text" id="email">
+      <span class="error" id="emailError">A valid email address is required</span>
+    </div>
+
+    <div class="row">
+      <label for="website">Website:</label>
+      <input type="text" id="website">
+      <span class="error" id="websiteError">A valid url is required</span>
+    </div>
+
+    <div class="row">
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4"></textarea>
+      <span class="error" id="messageError">This field is required</span>
+    </div>
+
+    <div class="row">
+      <input type="submit" value="Submit" class="submit-btn">
+    </div>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
