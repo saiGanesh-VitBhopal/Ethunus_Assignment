@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Checker</title>
+</head>
+<body>
+
+  <h2>Check Your Grade</h2>
+  <button onclick="checkGrade()">Check Grade</button>
+
+  <p id="gradeResult"></p>
+
+  <script>
+    function checkGrade() {
+      const input = prompt("Enter your marks out of 100:");
+      const marks = parseFloat(input);
+
+      if (isNaN(marks) || marks < 0 || marks > 100) {
+        document.getElementById("gradeResult").innerText = "Please enter a valid number between 0 and 100.";
+        return;
+      }
+
+      let grade = "";
+
+      if (marks >= 90) {
+        grade = "A";
+      } else if (marks >= 75) {
+        grade = "B";
+      } else if (marks >= 60) {
+        grade = "C";
+      } else if (marks >= 40) {
+        grade = "D";
+      } else {
+        grade = "F";
+      }
+
+      document.getElementById("gradeResult").innerText = "Your grade is: " + grade;
+    }
+  </script>
+
+</body>
+</html>

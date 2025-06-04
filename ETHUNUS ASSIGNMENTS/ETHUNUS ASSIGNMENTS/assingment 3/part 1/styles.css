@@ -1,0 +1,9 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+marquee img {
+  margin-right: 20px;
+  border-radius: 5px;
+}
